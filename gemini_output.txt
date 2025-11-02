@@ -1,0 +1,38 @@
+Prompt: ¿Qué es la inteligencia artificial?
+
+Respuesta: La inteligencia artificial (IA) es un campo de la informática que se dedica a diseñar y desarrollar sistemas que pueden realizar tareas que normalmente requieren inteligencia humana. En otras palabras, busca crear máquinas que puedan pensar, aprender, razonar y resolver problemas de manera similar a como lo hacen los humanos.
+
+Aquí te presento una definición más desglosada:
+
+*   **Inteligencia:** La capacidad de adquirir y aplicar conocimiento y habilidades.
+*   **Artificial:** Creado por humanos, no natural.
+
+Por lo tanto, la IA busca replicar o simular la inteligencia humana en máquinas o programas informáticos.
+
+**Algunas características clave de la IA incluyen:**
+
+*   **Aprendizaje:** La capacidad de mejorar el rendimiento con la experiencia (aprendizaje automático o Machine Learning).
+*   **Razonamiento:** La capacidad de usar la lógica y la inferencia para llegar a conclusiones.
+*   **Resolución de problemas:** La capacidad de identificar y resolver problemas complejos.
+*   **Percepción:** La capacidad de interpretar información del entorno a través de sensores (visión artificial, procesamiento del lenguaje natural, etc.).
+*   **Procesamiento del lenguaje natural (PNL):** La capacidad de comprender y generar lenguaje humano.
+*   **Toma de decisiones:** La capacidad de elegir la mejor acción en una situación dada.
+
+**Tipos de IA (una simplificación):**
+
+*   **IA Débil o Estrecha (Narrow AI):** Diseñada para realizar una tarea específica. La mayoría de la IA que vemos hoy en día es IA débil. Ejemplos: asistentes virtuales como Siri o Alexa, sistemas de recomendación de Netflix, software de reconocimiento facial.
+*   **IA Fuerte o General (Artificial General Intelligence - AGI):** Teóricamente capaz de entender, aprender y aplicar su inteligencia a cualquier tarea que un humano pueda realizar. Todavía no existe.
+*   **Superinteligencia:** Una IA que supera la inteligencia humana en todos los aspectos. Es un concepto puramente teórico y objeto de debate.
+
+**Ejemplos de aplicaciones de la IA:**
+
+*   **Salud:** Diagnóstico de enfermedades, desarrollo de nuevos medicamentos.
+*   **Finanzas:** Detección de fraudes, análisis de riesgos, asesoramiento financiero automatizado.
+*   **Transporte:** Coches autónomos, optimización de rutas.
+*   **Manufactura:** Automatización de procesos, control de calidad.
+*   **Marketing:** Personalización de anuncios, análisis de clientes.
+*   **Educación:** Tutoría personalizada, evaluación automatizada.
+
+**En resumen:**
+
+La inteligencia artificial es un campo en constante evolución que busca crear máquinas capaces de imitar la inteligencia humana. Tiene el potencial de transformar muchos aspectos de nuestras vidas, pero también plantea importantes desafíos éticos y sociales.
