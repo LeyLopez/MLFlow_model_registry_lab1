@@ -1,0 +1,9 @@
+Resumen de Estadísticas
+========================================
+Promedio: 49.6731
+Mediana: 49.6705
+Desviacion: 10.2816
+Minimo: 14.6574
+Maximo: 83.7002
+
+Fecha: 2025-11-01 19:18:37
