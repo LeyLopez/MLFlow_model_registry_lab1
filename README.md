@@ -1,94 +1,56 @@
 
-# MLFlow
+# Laboratorio MLOps — MLflow
 
-Este repositorio contiene ejemplos y artefactos de experimentación con MLflow.
+Repositorio del laboratorio de MLOps: uso de MLflow para crear experimentos, registrar métricas/hiperparámetros y versionar modelos localmente.
 
-## Descripción
+Objetivo
 
-Proyecto de ejemplo para registrar experimentos, métricas, parámetros y modelos con MLflow. Incluye scripts y un directorio `mlruns/` con runs y modelos ya registrados localmente.
+- Practicar el registro de experimentos y modelos con MLflow. Aprender a ejecutar runs, revisar métricas y publicar modelos en el registro local.
 
-## Contenido principal
+Archivos clave
 
-- `tracking_introduction.py` - Script de ejemplo que registra experimentos y métricas en MLflow.
-- `ml_model_registry.py` - Utilidades para el registro y gestión de modelos con MLflow.
-- `ml_models_registry.py` - Código relacionado con la gestión de versiones de modelos (registro local).
-- `resumen_estadisticas.txt` - Artefacto con estadísticas de un experimento de ejemplo.
-- `mlruns/` - Carpeta donde MLflow guarda las ejecuciones (runs), métricas, parámetros y modelos.
+- `tracking_introduction.py` — script de ejemplo que ejecuta un experimento y lo registra en MLflow.
+- `ml_model_registry.py`, `ml_models_registry.py` — utilidades para registrar y versionar modelos.
+- `mlruns/` — almacenamiento local de runs, métricas, parámetros y artefactos.
 
-## Requisitos
+Requisitos mínimos
 
-Asegúrate de tener Python 3.8+ y `pip` instalados. El archivo `requirements.txt` lista las dependencias necesarias.
+- Python 3.8+
+- `pip`
+- Dependencias listadas en `requirements.txt` (incluye `mlflow`).
 
-## Instalación (PowerShell)
-
-1. Crear y activar un entorno virtual (opcional pero recomendado):
+Instalación (PowerShell)
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-```
-
-2. Instalar dependencias:
-
-```powershell
 pip install -r requirements.txt
 ```
 
-Si tienes problemas con la política de ejecución en PowerShell al activar el entorno, puedes ejecutar:
+Uso rápido (pasos del laboratorio)
 
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-.\.venv\Scripts\Activate.ps1
-```
-
-## Uso rápido
-
-1. Registrar o reproducir un experimento (ejemplo):
+1) Ejecutar el experimento de ejemplo (registra parámetros, métricas y artefactos):
 
 ```powershell
 python .\tracking_introduction.py
 ```
 
-Este script registrará parámetros, métricas y (posiblemente) artefactos en la carpeta `mlruns/`.
-
-2. Levantar la interfaz web de MLflow para visualizar runs y modelos:
+2) Levantar la interfaz web de MLflow para inspeccionar runs y modelos:
 
 ```powershell
 mlflow ui --backend-store-uri .\mlruns --port 5000
 ```
 
-Abre http://127.0.0.1:5000 en tu navegador.
+Abrir http://127.0.0.1:5000 en el navegador y seleccionar el experimento correspondiente.
 
-## Estructura del proyecto
+Registro de modelos (resumen)
 
-La estructura del repositorio contiene:
+- El script de ejemplo puede llamar a `mlflow.sklearn.log_model()` o `mlflow.register_model()` para almacenar el modelo en `mlruns/` y en `models/` (registro local). Revisa `mlruns/` y `models/` tras ejecutar el script para ver versiones.
 
-- `mlruns/` - almacenamiento local de MLflow. Dentro encontrarás subcarpetas por experimento y runs con `metrics/`, `params/`, `artifacts/` y `tags/`.
-- `models/` - (cuando se usa MLflow Model Registry local) versiones de modelos registradas.
+Verificación rápida
 
-## Buenas prácticas
-
-- Mantén el entorno virtual activado cuando trabajes con el proyecto.
-- Controla el versionado de tus modelos usando `mlflow.register_model()` cuando quieras publicar versiones en `models/`.
-- Añade descripciones claras a tus runs usando tags y `mlflow.set_tag()` para facilitar búsquedas.
-
-## Ejemplos útiles
-
-- Registrar y luego ver la UI:
-
-```powershell
-python .\tracking_introduction.py ; mlflow ui --backend-store-uri .\mlruns --port 5000
-```
-
-- Activar el entorno y reinstalar dependencias rápidas:
-
-```powershell
-.\.venv\Scripts\Activate.ps1 ; pip install -r requirements.txt
-```
-
-## Notas finales
-
-Si deseas que añada instrucciones específicas para publicar modelos (por ejemplo en MLflow Tracking Server remoto, o pasos para exportar modelos), dime qué flujo usas (registro local, servidor MLflow, Azure/AWS/GCP) y lo documento.
+- Tras ejecutar `tracking_introduction.py`, comprueba que en `mlruns/` aparecen nuevas carpetas con `metrics/`, `params/` y `artifacts/`.
+- Abre la UI de MLflow para comprobar métricas, comparar runs y ver modelos versionados.
 
 ---
 
